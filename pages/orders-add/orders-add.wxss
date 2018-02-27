@@ -1,0 +1,19 @@
+.navbar-title {
+  -webkit-box-flex: 1;
+  flex: 1;
+  font-size: 15px;
+  color: #fff;
+  display: inline-block;
+  width: aotu;
+  text-align:center;
+  padding: 13px 9px;
+}
+.order-info{
+    margin-top: 50px;
+}
+.item-add{
+    background: darkorange;
+    margin: 12px 20px;
+    color: white;
+    font-size: 16px;
+}

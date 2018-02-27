@@ -1,0 +1,121 @@
+
+<!--pages/add/add.wxml-->
+<view class="page bottom-pd">
+  <view class="weui-navbar">
+    <view class="navbar-title">创建订单</view>
+  </view>
+  <view class="order-info weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">客户名称</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入客户名称"></input>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">联系方式</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入客户联系方式" bindinput=""></input>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">备注</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入订单备注"></input>
+      </view>
+    </view>
+  </view>
+  <button class="weui-btn item-add" bindtap="bindadditem">添加商品</button>
+  <view class="info-preview">
+    <view class="info-preview-item">商品款数
+      <view class="item-data">2</view>
+    </view>
+    <view class="info-preview-item">总件数
+      <view class="item-data">2</view>
+    </view>
+    <view class="info-preview-item">总体积
+      <view class="item-data">2</view>
+    </view>
+    <view class="info-preview-item">总金额
+      <view class="item-data">2</view>
+    </view>
+  </view>
+  <view class="weui-form-preview">
+    <view class=" item-flex_p">
+      <view class="item-flex_img">
+        <image style="width: 100%; height: 100%; background-color: #FFFFFF;" mode="aspectFit" src="../../img/1.png"></image>
+      </view>
+      <view class="item-flex_info">
+        <view class="weui-form-preview__hd">
+          <view class="weui-form-preview__label">总金额</view>
+          <view class="weui-form-preview__value_in-hd">¥2400.00</view>
+        </view>
+        <view class="weui-form-preview__bd">
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">商品</view>
+            <view class="weui-form-preview__value">电动打蛋机</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">型号</view>
+            <view class="weui-form-preview__value">XX</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">单价</view>
+            <view class="weui-form-preview__value">22</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">数量</view>
+            <view class="weui-form-preview__value">12</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-form-preview__ft">
+      <navigator class="weui-form-preview__btn weui-form-preview__btn_modify" hover-class="weui-form-preview__btn_active">修改</navigator>
+      <navigator class="weui-form-preview__btn weui-form-preview__btn_delete" hover-class="weui-form-preview__btn_active">删除</navigator>
+    </view>
+  </view>
+  <view class="weui-form-preview">
+    <view class=" item-flex_p">
+      <view class="item-flex_img">
+        <image style="width: 100%; height: 100%; background-color: #FFFFFF;" mode="aspectFit" src="../../img/1.png"></image>
+      </view>
+      <view class="item-flex_info">
+        <view class="weui-form-preview__hd">
+          <view class="weui-form-preview__label">总金额</view>
+          <view class="weui-form-preview__value_in-hd">¥2400.00</view>
+        </view>
+        <view class="weui-form-preview__bd">
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">商品</view>
+            <view class="weui-form-preview__value">电动打蛋机</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">型号</view>
+            <view class="weui-form-preview__value">XX</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">单价</view>
+            <view class="weui-form-preview__value">22</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">数量</view>
+            <view class="weui-form-preview__value">12</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-form-preview__ft">
+      <navigator class="weui-form-preview__btn weui-form-preview__btn_modify" hover-class="weui-form-preview__btn_active">修改</navigator>
+      <navigator class="weui-form-preview__btn weui-form-preview__btn_delete" hover-class="weui-form-preview__btn_active">删除</navigator>
+    </view>
+  </view>
+  <view class="weui-navbar-bottom">
+    <button class="order-push-btn">提交订单</button>
+  </view>
+</view>

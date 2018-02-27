@@ -1,0 +1,51 @@
+{
+  "pages": [  
+    "pages/welcome/welcome",    
+    "pages/orders/orders",                        
+    "pages/mine/mine",
+    "pages/orders-add/orders-add",
+     "pages/orders-detail/orders-detail",
+    "pages/add-item/add-item",
+    "pages/info/info",
+    "pages/info-modify/info-modify",
+    "pages/login/login",    
+    "pages/signup2/signup2",
+    "pages/signup/signup",
+    "pages/transaction/transaction",
+    "pages/payment/payment"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "小订猫",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f8f8f8",
+    "enablePullDownRefresh":"false"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "订单",
+        "selectedIconPath": "img/order.png",
+        "iconPath": "img/order1.png"
+      },
+      {
+        "pagePath": "pages/orders-add/orders-add",
+        "text": "添加",
+        "selectedIconPath": "img/add.png",
+        "iconPath": "img/add1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "selectedIconPath": "img/account.png",
+        "iconPath": "img/account1.png"
+      }
+    ],
+    "color": "#707070",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#1AAD19"
+  }
+}

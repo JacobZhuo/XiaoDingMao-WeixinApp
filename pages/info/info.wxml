@@ -1,0 +1,53 @@
+<view class="page">
+  <view class="weui-navbar">
+    <view class="navbar-title">个人信息</view>
+  </view>
+  <view class="mine-list">
+    <view class="weui-cells">
+
+      <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active"  url="../info-modify/info-modify?title=姓名&info={{name}}&key=name">
+        <view class="weui-cell__bd">姓名</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">{{name}}</view>
+      </navigator>
+      
+      <view class="weui-cell">
+        <view class="weui-cell__bd">手机号码</view>
+        <view class="weui-cell__ft">{{no}}</view>
+      </view>
+
+            <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active"   url="../info-modify/info-modify?title=电话号码&info={{telephone}}&key=telephone">
+        <view class="weui-cell__bd">电话号码</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">{{telephone}}</view>
+      </navigator>
+            <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active"   url="../info-modify/info-modify?title=公司名称&info={{company}}&key=company">
+        <view class="weui-cell__bd">公司名称</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">{{company}}</view>
+      </navigator>
+            <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active"   url="../info-modify/info-modify?title=公司地址&info={{address}}&key=address">
+        <view class="weui-cell__bd">公司地址</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">{{address}}</view>
+      </navigator>
+            <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active"   url="../info-modify/info-modify?title=备注&info={{comment}}&key=comment">
+        <view class="weui-cell__bd">备注</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">{{comment}}</view>
+      </navigator>
+      </view>
+
+    <view class="weui-cells list-item__tp">
+      <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">修改密码</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+    <view class="weui-cells list-item__tp">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">注册时间</view>
+        <view class="weui-cell__ft">{{joinDate}}</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">过期时间</view>
+        <view class="weui-cell__ft">{{expiryDate}}</view>
+      </view>
+    </view>
+  </view>
+</view>

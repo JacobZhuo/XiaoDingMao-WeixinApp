@@ -1,0 +1,16 @@
+.navbar-title {
+  -webkit-box-flex: 1;
+  flex: 1;
+  font-size: 15px;
+  color: #fff;
+  display: inline-block;
+  width: aotu;
+  text-align:center;
+  padding: 13px 9px;
+}
+.mine-list{
+    margin-top: 50px;
+}
+.mine-item__tp{
+    margin-top: 10px;    
+}

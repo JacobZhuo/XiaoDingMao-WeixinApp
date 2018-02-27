@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="weui-navbar">
+    <view class="navbar-title">{{company}}</view>
+  </view>
+  <view class="order-list">
+    <view class="order-item" wx:for="{{orders}}">
+      <view class="order-title">
+        <view class="order-title__id">编号：{{item.no}}</view>
+        <view class="order-title__time">{{item.editTime}}</view>
+      </view>
+      <view class="order-info">
+        <view class="info-title">订单信息</view>
+        <view class="info-subtitle">
+          <view class="info-text__ft">总金额:¥{{item.totalPrice}}</view>
+          <view class="info-text__rt">包含{{item.detailcnt}}个商品</view>
+        </view>
+        <view class="info-title">客户信息</view>
+        <view class="info-subtitle">
+          <view class="info-text__ft">{{item.client}}</view>
+          <view class="info-text__rt">联系方式:{{item.contacts}}</view>
+        </view>
+      </view>
+      <view class="order-button">
+        <view class=" left-btn">
+          <button class="weui-btn btn-center" type="primary" size="mini" bindtap="bindExcel" id="{{item.id}}">导出excle</button>
+        </view>
+        <view class=" right-btn">
+          <button class="weui-btn btn-center" type="warn" size="mini" bindtap="bindDelete" id="{{item.id}}">删除</button>
+        </view>
+        <view class=" right-btn">
+          <button class="weui-btn btn-center" size="mini" style="background-color:darkorange; color:white" bindtap="bindModify" id="{{item.id}}">修改</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

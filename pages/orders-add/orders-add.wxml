@@ -1,0 +1,33 @@
+<view class="page bottom-pd">
+  <view class="weui-navbar">
+    <view class="navbar-title">创建订单</view>
+  </view>
+  <view class="order-info weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">客户名称</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入客户名称" bindinput="bindOrderClient" value="{{orderclient}}"></input>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">联系方式</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入客户联系方式" bindinput="bindOrderContacts" value="{{ordercontacts}}"></input>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">备注</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入订单备注" bindinput="bindOrderComment" value="{{ordercomment}}"></input>
+      </view>
+    </view>
+  </view>
+  <button class="weui-btn item-add" bindtap="bindAddItem">添加商品</button>
+  
+</view>

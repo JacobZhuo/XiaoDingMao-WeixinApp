@@ -1,0 +1,23 @@
+<view>
+<swiper indicator-dots="{{indicatorDots}} " current="3">
+<block wx:for="{{imgUrls}}"  wx:key="index">
+<swiper-item>
+    <image src="{{item}}" style="width:100%; height:100%" ></image>
+</swiper-item>
+    </block>
+<swiper-item>
+<view class="login">  
+<view class="avatar">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>    
+</view>
+<view class="text">
+  <text class="userinfo-nickname">{{userInfo.nickName}}，您好\n欢迎使用小订猫</text>
+  </view>
+        <view class="btn-sp">
+  <button class="weui-btn s-font" type="primary" bindtap="bindsignup">第一次使用小订猫</button>
+  <button class="weui-btn s-font" type="primary" plain="true" bindtap="bindlogin">已有小订猫账号</button>
+  </view>
+  </view>
+</swiper-item>
+</swiper>
+</view>

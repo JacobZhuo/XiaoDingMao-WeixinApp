@@ -1,0 +1,10 @@
+.mine-list{
+    margin-top: 50px;
+}
+.mine-item__tp{
+    margin-top: 10px;    
+}
+.info-input{
+    text-align: right;
+    color: #999999
+}

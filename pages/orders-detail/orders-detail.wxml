@@ -1,0 +1,87 @@
+<view class="page bottom-pd">
+  <view class="weui-navbar">
+    <view class="navbar-title">订单详情</view>
+  </view>
+   <view class="order-info weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">客户名称</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入客户名称" bindinput="bindOrderClient" value="{{orderclient}}"></input>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">联系方式</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入客户联系方式" bindinput="bindOrderContacts" value="{{ordercontacts}}"></input>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">备注</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入订单备注" bindinput="bindOrderComment" value="{{ordercomment}}"></input>
+      </view>
+    </view>
+  </view>
+  <button class="weui-btn item-add" bindtap="bindadditem">添加商品</button>
+  <view class="info-preview">
+    <view class="info-preview-item">商品款数
+      <view class="item-data">{{totalCtq}}</view>
+    </view>
+    <view class="info-preview-item">总件数
+      <view class="item-data">{{detailcnt}}</view>
+    </view>
+    <view class="info-preview-item">总体积
+      <view class="item-data">{{totalVolume}}</view>
+    </view>
+    <view class="info-preview-item">总金额
+      <view class="item-data">{{totalPrice}}</view>
+    </view>
+  </view>
+
+  <view class="weui-form-preview" wx:for="{{orderDetail}}">
+    <view class=" item-flex_p">
+      <view class="item-flex_img">
+        <image class="item-img" mode="aspectFit" src="https://xiaodingmao.com/{{item.thumbnail}}"></image>
+      </view>
+      <view class="item-flex_info">
+        <view class="weui-form-preview__hd">
+          <view class="weui-form-preview__label">总金额</view>
+          <view class="weui-form-preview__value_in-hd">¥{{item.unitPrice*item.quantity}}</view>
+        </view>
+        <view class="weui-form-preview__bd">
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">商品</view>
+            <view class="weui-form-preview__value">{{item.name}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">型号</view>
+            <view class="weui-form-preview__value">{{item.model}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">单价</view>
+            <view class="weui-form-preview__value">{{item.unitPrice}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">数量</view>
+            <view class="weui-form-preview__value">{{item.quantity}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-form-preview__ft">
+      <navigator class="weui-form-preview__btn weui-form-preview__btn_modify" hover-class="weui-form-preview__btn_active" url="../add-item/add-item?itemId={{item.id}}">修改</navigator>
+      <navigator class="weui-form-preview__btn weui-form-preview__btn_delete" hover-class="weui-form-preview__btn_active" 
+      id="{{item.id}}" bindtap="bindDelete">删除</navigator>
+    </view>
+  </view>
+
+  <view class="weui-navbar-bottom">
+    <button class="order-push-btn" bindtap="bindUpdate">提交订单</button>
+  </view>
+</view>

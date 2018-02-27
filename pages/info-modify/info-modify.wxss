@@ -1,0 +1,26 @@
+.navbar-title {
+  -webkit-box-flex: 1;
+  flex:1;
+  font-size: 15px;
+  color: #fff;
+  display: inline-block;
+  width: aotu;
+  text-align:center;
+  padding: 13px 9px;
+}
+.navbar-btn{
+  -webkit-box-flex: 1;
+  flex: 1;
+  font-size: 15px;
+  color: #fff;
+  display: inline-block;
+  width: aotu;
+  text-align:right;
+  padding: 13px 9px;
+}
+.info-modify{
+    margin-top: 70px;
+}
+.info-modify-title{
+  color: #999999;
+}
